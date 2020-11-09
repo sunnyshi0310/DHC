@@ -7,7 +7,7 @@ def talker():
     rospy.init_node('talker') # Initialize the node with name "talker"
     pub = rospy.Publisher('chatter',String,queue_size = 10) # Declare a publisher that your node "talker" will publish messages to the topic "chatter". The format of the message is defined as "String", i.e. the topic using the message type "String". 
     
-    rate = rospy.Rate(10) # 10hz
+    rate = rospy.Rate(10) # 10 hz
     
     while not rospy.is_shutdown():
         content = "welcome to EE175 %s"
