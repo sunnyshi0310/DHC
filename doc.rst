@@ -3,13 +3,14 @@ Introduction to ROS
 Overview
 --------
 
-Robot Operating System (ROS) is a collection of software frameworks for robot software developments. 
+`Robot Operating System`_ (ROS) is a collection of software frameworks for robot software developments. 
 Although ROS is not an operatering system, it provides services designed for a heterogeneous computer cluster and a majority of the packges are open source. 
 One of its main advantages is that the client libraries (C++ and Python) allow nodes written in different programming languages to communicate. 
 It is a powerful tool embedded with hardware abstraction, low-level device control, 
 implementation of commonly used functionality, message-passing between processes, and package management.
 While here we will only list the basic (key) components that might be related to Senior Design Projects.
 
+.. _Robot Operating System: http://wiki.ros.org/
 
 Terminologies
 -------------
@@ -67,7 +68,10 @@ Now we are going to explain each sentence of the sample script. Please read care
 
     import rospy
     
-- This line imports a well-defined message type ``String`` that will be later used in ``rospy.Publisher``. You could find all information (as in the following figure) of a type of message by typing ``$message$ ros`` on google. Most of message types could be found at ``http://wiki.ros.org/std_msgs`` or ``https://wiki.ros.org/common_msgs``.
+- This line imports a well-defined message type ``String`` that will be later used in ``rospy.Publisher``. You could find all information (as in the following figure) of a type of message by typing ``$message$ ros`` on google. Most of message types could be found at `std_msgs`_ or `_common_masgs`.
+
+.. _std_msgs: http://wiki.ros.org/std_msgs
+.. _common_msgs: https://wiki.ros.org/common_msgs
 
 .. image:: figures/string.png
     :width: 15%
@@ -194,7 +198,12 @@ You could check whether your communication algorithm works or not. To use it, ju
 Frequently-used Commands
 ------------------------
 
-- ``roscore``: You must have a roscore running in order for ROS nodes to communicate. It will start up a ROS Master, a ROS Server and a rosout loggin node.
+- ``roscore``: You must have a roscore running in order for ROS nodes to communicate. It will start up a `ROS Master`_, a `ROS Server`_ and a `rosout`_ loggin node.
+
+.. _ROS Master: http://wiki.ros.org/Master
+.. _ROS Server: http://wiki.ros.org/Parameter%20Server
+.. _rosout: http://wiki.ros.org/rosout
+
 - ``roslaunch $package_name$ $file.launch$``: is for easily launching multiple ROS nodes as well as setting parameters. A ``roslaunch`` will automatically start ``roscore``.
 - ``rosnode list``: lists all active nodes that are currently running.
 - ``rosnode info $node$``: show information of the node, e.g., publications; subscriptions.
@@ -202,8 +211,3 @@ Frequently-used Commands
 - ``rostopic echo $topic$``: print message to screen.
 - ``rostopic type $topic$``: print topic type (message type)
 - ``rosrun $package$ $executable$``:rosrun allows you to run an executable in an arbitrary package from anywhere without having to give its full path
-
-Reference
----------
-ROS.org ``http://wiki.ros.org/``
-ROS Wikipedia ``https://en.wikipedia.org/wiki/Robot_Operating_System``
