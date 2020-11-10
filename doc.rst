@@ -70,7 +70,7 @@ Now we are going to explain each sentence of the sample script. Please read care
 - This line imports a well-defined message type ``String`` that will be later used in ``rospy.Publisher``. You could find all information (as in the following figure) of a type of message by typing ``$message$ ros`` on google. Most of message types could be found at ``http://wiki.ros.org/std_msgs`` or ``https://wiki.ros.org/common_msgs``.
 
 .. image:: figures/string.png
-    :width: 40%
+    :width: 15%
 
 .. code-block:: python
 
