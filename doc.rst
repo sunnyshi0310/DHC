@@ -13,4 +13,26 @@ The states typically includes the configuration (position) and its derivative (v
 
 .. _state-space representation: https://en.wikipedia.org/wiki/State-space_representation
 
+- State-Space Modelling Steps
+
+  - Given a set of differential equations (take a single variable y(t) as an example here)
+  - Isolate the n-th highest derivative
+  
+Kinematics
+----------
+
+- Forward Kinematics: To determine robot position (x, y) and orientation (𝜃) based on wheels rotation measurements.
+
+- Inverse Kinematics
+
+Derive State-space Model for Mobile Robot
+-----------------------------------------
+
+- Differential drive model
+- Unicycle Model
+
+PID Controller
+
+  
+ 
 
