@@ -12,18 +12,13 @@ In robotic systems, this minimum number are always related to the degree of free
 The states typically includes the configuration (position) and its derivative (velocity). 
 
 .. _state-space representation: https://en.wikipedia.org/wiki/State-space_representation
-.. role:: raw-latex(raw)
-    :format: latex html
-
-.. raw:: html
-
-   <script type="text/javascript" src="http://localhost/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
    
    
 - State-Space Modelling Steps
 
   - Given a set of differential equations (take a single variable q(t) as an example here)
-  - Isolate the n-th highest derivative, :raw-latex:`q^(n) = g(q,\dot(q))` 
+  - Isolate the n-th highest derivative, :math:`\Delta t`
+
 
     
   
